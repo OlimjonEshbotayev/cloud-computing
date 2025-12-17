@@ -11,9 +11,7 @@ def decimal_to_binary(n):
     return binary
 
 
-son = int(input("10-lik son kiriting: "))
-natija = decimal_to_binary(son)
-print("2-lik sanoq sistemasida:", natija)
+
 
 def decimal_to_octal(n):
     if n == 0:
@@ -28,10 +26,6 @@ def decimal_to_octal(n):
     return octal
 
 
-son = int(input("10-lik son kiriting: "))
-natija = decimal_to_octal(son)
-print("8-lik sanoq sistemasida:", natija)
-
 def decimal_to_hexadecimal(n):
     if n == 0:
         return "0"
@@ -45,7 +39,13 @@ def decimal_to_hexadecimal(n):
         n //= 16
 
     return hex_son
+son = int(input("10-lik son kiriting: "))
+natija = decimal_to_binary(son)
+print("2-lik sanoq sistemasida:", natija)
 
+son = int(input("10-lik son kiriting: "))
+natija = decimal_to_octal(son)
+print("8-lik sanoq sistemasida:", natija)
 
 son = int(input("10-lik son kiriting: "))
 natija = decimal_to_hexadecimal(son)
